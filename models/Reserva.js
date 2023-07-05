@@ -28,6 +28,18 @@ const Reserva = sequelize.define('Reserva', {
         type: DataTypes.INTEGER,
         allowNull: false
     },
+    destino: {
+      type: DataTypes.STRING,
+      allowNull: false
+    },
+    costo: {
+      type: DataTypes.ENUM('primera clase: $10000', 'común: $5000'),
+      allowNull: false
+    },
+    fecha_solicitud: {
+      type: DataTypes.DATE,
+      allowNull: false
+    },
     fecha_vuelo: {
         type: DataTypes.DATE,
         allowNull: false,

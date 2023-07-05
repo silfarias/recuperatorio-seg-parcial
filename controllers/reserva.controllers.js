@@ -63,6 +63,9 @@ ctrlReservas.crearReserva = async (req, res) => {
         apellido,
         dni,
         telefono,
+        destino,
+        costo,
+        fecha_solicitud,
         fecha_vuelo,
     } = req.body;
 
@@ -72,6 +75,9 @@ ctrlReservas.crearReserva = async (req, res) => {
             apellido,
             dni,
             telefono,
+            destino,
+            costo,
+            fecha_solicitud,
             fecha_vuelo, 
             codigo: new Date().getTime()
         }) 

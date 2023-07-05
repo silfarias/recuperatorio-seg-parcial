@@ -1,0 +1,60 @@
+<%- include('partials/header') %>
+
+<a href="/" class="btn btn-info text-light">Inicio</a>
+<div class="container" id="formulario">
+    <div class="card">
+      <div class="card-body">
+        <h2 class="card-title">Nueva Reserva</h2>
+        <form id="formNuevaReserva" method="POST">
+            <div class="form-group">
+              <label for="nombre">Nombre:</label>
+              <input type="text" class="form-control" id="nombre" name="nombre" required>
+            </div>
+  
+            <div class="form-group">
+              <label for="apellido">Apellido:</label>
+              <input type="text" class="form-control" id="apellido" name="apellido" required>
+            </div>
+  
+            <div class="form-group">
+              <label for="dni">DNI:</label>
+              <input type="text" class="form-control" id="dni" name="dni" required>
+            </div>
+
+            <div class="form-group">
+                <label for="dni">Telefono:</label>
+                <input type="text" class="form-control" id="telefono" name="dni" required>
+            </div>
+
+            <div class="form-group">
+              <label for="nombre">Destino:</label>
+              <input type="text" class="form-control" id="destino" name="nombre" required>
+            </div>
+
+            <div class="form-group">
+                <label for="costo">Costo:</label>
+                <select class="form-control" id="costo" name="costo" required>
+                    <option value="primera clase: $10000">Primera Clase - $10000</option>
+                    <option value="común: $5000">Común - $5000</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+              <label for="fecha_ingreso">Fecha solicitud de reserva:</label>
+              <input type="datetime-local" class="form-control" id="fecha_solicitud" name="fecha_ingreso" required>
+            </div>
+  
+            <div class="form-group">
+              <label for="fecha_salida">Fecha del vuelo:</label>
+              <input type="datetime-local" class="form-control" id="fecha_vuelo" name="fecha_salida" required>
+            </div><br>
+  
+            <button type="submit" class="btn btn-primary">Guardar Reserva</button>
+          </form>
+        </div>
+    </div>
+  </div>
+
+<script src="js/nueva.reserva.js"></script>
+
+<%- include('partials/footer') %>
