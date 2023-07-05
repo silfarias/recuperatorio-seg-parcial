@@ -6,9 +6,14 @@ const morgan = require('morgan')
 const path = require('path');
 require('dotenv').config();
 
-
 const app = express();
 const port = process.env.PORT || 5000;
+
+//const { connectDB } = require('./database');
+//connectDB();
+
+const { connectDB } = require('./database');
+connectDB();
 
 // Middlewares
 // TODO: Implementar middlewares
