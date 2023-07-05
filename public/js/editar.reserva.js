@@ -1,6 +1,5 @@
 const formReserva = document.querySelector('#formNuevaReserva');
 const reservaId = formReserva.dataset.id;
-console.log(reservaId)
 
 const nombre = document.querySelector('#nombre')
 const apellido = document.querySelector('#apellido')
